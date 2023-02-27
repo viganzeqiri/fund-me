@@ -7,7 +7,6 @@ library PriceConvertor {
     function getPrice(
         AggregatorV3Interface priceFeed
     ) internal view returns (uint256) {
-        // 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
         // ETH in USD
         (, int256 price, , , ) = priceFeed.latestRoundData();
 
